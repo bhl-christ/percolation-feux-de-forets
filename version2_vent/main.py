@@ -1,3 +1,9 @@
+"""
+PROJET : Modélisation Mathématique - Percolation (Feux de Forêt)
+VERSION : 2 (Modèle Avancé avec Vent)
+AUTEURS : AUTEURS : Semih ASLAN, Rodanim GANABA, Christ BAHOUASSILA
+"""
+
 import model
 import simulation
 import visualisation
