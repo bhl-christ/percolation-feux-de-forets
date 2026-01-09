@@ -42,3 +42,34 @@ def etude_percolation(n, nb_simulations=50):
         probabilites.append(succes / nb_simulations)
 
     return densites, probabilites
+
+
+def trouver_seuil_critique(densites, probabilites):
+    """
+    Cherche la valeur de densité p pour laquelle la probabilité de percolation est de 0.5 (50%).
+    Utilise une interpolation linéaire entre les deux points encadrant 0.5.
+    """
+    x = np.array(densites)
+    y = np.array(probabilites)
+
+    # On cherche les indices où la probabilité dépasse ou est égale 0.5
+    indices_sup = np.where(y >= 0.5)[0]
+
+    # Si la courbe ne monte jamais (ex: max 0.1) ou commence trop haut
+    if len(indices_sup) == 0 or indices_sup[0] == 0:
+        return None
+
+        # idx est l'index du premier point au-dessus de 0.5
+    idx = indices_sup[0]
+
+    # On récupère les coordonnées du point avant (x1, y1) et après (x2, y2)
+    x1, y1 = x[idx - 1], y[idx - 1]
+    x2, y2 = x[idx], y[idx]
+
+    # Formule d'interpolation linéaire pour trouver x quand y = 0.5
+    # x = x1 + (target_y - y1) * (pente_inverse)
+    if y2 == y1: return x1  # Évite la division par zéro
+
+    p_critique = x1 + (0.5 - y1) * (x2 - x1) / (y2 - y1)
+
+    return p_critique
