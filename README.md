@@ -1,7 +1,9 @@
 # Modélisation Mathématique : La Percolation et les Feux de Forêt
 
 **Auteurs :** Semih ASLAN, Rodanim GANABA, Christ BAHOUASSILA
+
 **Cadre :** Cours de Modélisation Mathématique
+
 **Langage :** Python 3 (Numpy, Matplotlib)
 
 ---
