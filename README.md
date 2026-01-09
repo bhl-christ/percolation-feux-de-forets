@@ -71,9 +71,8 @@ python main.py
 ### Lancer la Version 3
 cd version3_defense
 python main.py
-
-Lance automatiquement une comparaison entre la coupe aléatoire et la tranchée sur une forêt dense, puis affiche les résultats et une animation.
 ```
+Lance automatiquement une comparaison entre la coupe aléatoire et la tranchée sur une forêt dense, puis affiche les résultats et une animation.
 
 ## Résultats Attendus
 Version 1 : Le seuil critique expérimental se situe autour de 0.59.
