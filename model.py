@@ -1,6 +1,6 @@
 import numpy as np
 
-# Constantes d'état (pour rendre le code lisible)
+# Constantes d'état
 VIDE = 0
 ARBRE = 1
 FEU = 2
