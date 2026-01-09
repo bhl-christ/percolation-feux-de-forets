@@ -6,7 +6,6 @@
 
 **Langage :** Python 3 (Numpy, Matplotlib)
 
----
 
 ## Présentation du Projet
 
@@ -14,7 +13,7 @@ Ce projet étudie le phénomène de **percolation de site** appliqué à la prop
 
 Nous avons développé trois versions du modèle pour illustrer une démarche scientifique progressive : de la validation théorique à la modélisation de contraintes physiques (le vent) et de stratégies d'ingénierie (coupe-feu).
 
----
+
 
 ## Architecture du Projet
 
@@ -44,7 +43,6 @@ Dans chaque dossier, le code est organisé de manière modulaire :
 * `simulation.py` : Moteur statistique et calculs de seuils.
 * `visualisation.py` : Gestion des graphiques et animations.
 
----
 
 ## Installation
 
